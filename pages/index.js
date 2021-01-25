@@ -18,6 +18,22 @@ export default function Home() {
           </p>
           {/* Personal statuses can be shown here */}
         </section>
+        <section>
+          <h3>Projects</h3>
+          <p>Coming soon...</p>
+        </section>
+        <section>
+          <h3>Blog Posts</h3>
+          <p>Coming soon...</p>
+        </section>
+        <section>
+          <h3>Bookmarks</h3>
+          <p>Coming soon...</p>
+        </section>
+        <section>
+          <h3>History</h3>
+          <p>Coming soon..</p>
+        </section>
       </main>
       <footer>
         <hr />
