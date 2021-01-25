@@ -48,6 +48,10 @@ export default function Home() {
             <Link href="https://nextjs.org/" isExternal>
               Next.js
             </Link>{" "}
+            and
+            <Link href="https://chakra-ui.com/" isExternal>
+              Chakra UI
+            </Link>{" "}
             in Madison, Wisconsin.
           </Text>
           <Text>MIT License © 2021 James Ungaretti.</Text>
