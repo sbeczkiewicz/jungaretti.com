@@ -8,6 +8,24 @@ export default function Home() {
         <title>JP Ungaretti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main>
+        <section>
+          <h1>Ciao, I'm JP Ungaretti.</h1>
+          <p>
+            I'm a developer studying computer science and Italian. I love to
+            swim, play board games, mess around with Linux, and explore nature.
+            Welcome to my corner of the Internet!
+          </p>
+          {/* Personal statuses can be shown here */}
+        </section>
+      </main>
+      <footer>
+        <hr />
+        <div>
+          <p>Crafted with Next.js in Madison, Wisconsin.</p>
+          <p>MIT License © 2021 James Ungaretti.</p>
+        </div>
+      </footer>
     </>
   );
 }
