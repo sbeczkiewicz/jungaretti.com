@@ -1,0 +1,12 @@
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.item {
+  display: inline-block;
+}
+
+.body {
+  background-color: #e9e9e9;
+}

@@ -9,6 +9,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import Head from "next/head";
+import Social from "../components/Social";
 
 export default function Home() {
   return (
@@ -29,13 +30,7 @@ export default function Home() {
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
           </Text>
-          <UnorderedList>
-            <ListItem>
-              <Link href="https://github.com/jungaretti/" isExternal>
-                GitHub
-              </Link>
-            </ListItem>
-          </UnorderedList>
+          <Social />
           {/* Personal dashboard can be shown here */}
         </Box>
         <Box as="section" mt="16px">
