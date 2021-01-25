@@ -30,16 +30,12 @@ export default function Home() {
           <p>Coming soon...</p>
         </section>
         <section>
-          <h3>Blog Posts</h3>
+          <h3>Recent Posts</h3>
           <p>Coming soon...</p>
         </section>
         <section>
           <h3>Bookmarks</h3>
           <p>Coming soon...</p>
-        </section>
-        <section>
-          <h3>History</h3>
-          <p>Coming soon..</p>
         </section>
       </main>
       <footer>
