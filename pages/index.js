@@ -17,32 +17,34 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Box as="main">
-        <Box as="section" mt="32px">
+        <Box as="section" mt={6}>
           <Heading>Ciao, I'm JP Ungaretti.</Heading>
-          <Text>
+          <Text mt={2}>
             I'm a developer studying computer science and Italian. I love to
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
           </Text>
-          <Social />
+          <Box mt={2}>
+            <Social />
+          </Box>
           {/* Personal dashboard can be shown here */}
         </Box>
-        <Box as="section" mt="16px">
+        <Box as="section" mt={4}>
           <Heading>Projects</Heading>
           <Text>Coming soon...</Text>
         </Box>
-        <Box as="section" mt="16px">
+        <Box as="section" mt={4}>
           <Heading>Blog Posts</Heading>
           <Text>Coming soon...</Text>
         </Box>
-        <Box as="section" mt="16px">
+        <Box as="section" mt={4}>
           <Heading>Bookmarks</Heading>
           <Text>Coming soon...</Text>
         </Box>
       </Box>
-      <Box as="footer" mt="16px">
+      <Box as="footer" mt={4}>
         <Divider />
-        <Box mt="8px">
+        <Box mt={4}>
           <Text>
             Crafted with{" "}
             <Link href="https://nextjs.org/" isExternal>
