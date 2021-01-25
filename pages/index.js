@@ -16,7 +16,7 @@ export default function Home() {
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
           </p>
-          {/* Personal statuses can be shown here */}
+          {/* Personal dashboard can be shown here */}
         </section>
         <section>
           <h3>Projects</h3>
