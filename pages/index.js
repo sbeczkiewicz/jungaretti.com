@@ -9,11 +9,10 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <Box maxWidth="680px" ml="auto" mr="auto">
+    <Box maxW="680px" mx="auto">
       <Head>
         <title>JP Ungaretti</title>
         <meta
@@ -22,8 +21,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <section>
+      <Box as="main">
+        <Box as="section" mt="32px">
           <Heading>Ciao, I'm JP Ungaretti.</Heading>
           <Text>
             I'm a developer studying computer science and Italian. I love to
@@ -38,23 +37,23 @@ export default function Home() {
             </ListItem>
           </UnorderedList>
           {/* Personal dashboard can be shown here */}
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mt="16px">
           <Heading>Projects</Heading>
           <Text>Coming soon...</Text>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mt="16px">
           <Heading>Blog Posts</Heading>
           <Text>Coming soon...</Text>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mt="16px">
           <Heading>Bookmarks</Heading>
           <Text>Coming soon...</Text>
-        </section>
-      </main>
-      <footer>
+        </Box>
+      </Box>
+      <Box as="footer" mt="16px">
         <Divider />
-        <Box>
+        <Box mt="8px">
           <Text>
             Crafted with{" "}
             <Link href="https://nextjs.org/" isExternal>
@@ -64,7 +63,7 @@ export default function Home() {
           </Text>
           <Text>MIT License © 2021 James Ungaretti.</Text>
         </Box>
-      </footer>
+      </Box>
     </Box>
   );
 }
