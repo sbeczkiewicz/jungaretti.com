@@ -59,7 +59,7 @@ export default function Home() {
             <Link href="https://nextjs.org/" isExternal>
               Next.js
             </Link>{" "}
-            in Madison, Wisconsin
+            in Madison, Wisconsin.
           </Text>
           <Text>MIT License © 2021 James Ungaretti.</Text>
         </Box>
