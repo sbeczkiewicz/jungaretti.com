@@ -1,28 +1,17 @@
-import {
-  Button,
-  ListItem,
-  UnorderedList,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
+import SocialLink from "./SocialLink";
 
 export default function Social() {
   return (
-    <UnorderedList ml="0" styleType="none">
-      <ListItem display="inline-block">
-        <Wrap mt="16px">
-          <WrapItem>
-            <Button
-              variant="solid"
-              as="a"
-              href="https://github.com/jungaretti/"
-              target="_blank"
-            >
-              GitHub
-            </Button>
-          </WrapItem>
-        </Wrap>
-      </ListItem>
-    </UnorderedList>
+    <Wrap>
+      <WrapItem>
+        <SocialLink
+          name="GitHub"
+          link="https://github.com/jungaretti/"
+          icon={<FaGithub />}
+        />
+      </WrapItem>
+    </Wrap>
   );
 }
