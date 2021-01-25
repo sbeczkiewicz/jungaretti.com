@@ -1,19 +1,10 @@
-import {
-  Box,
-  Center,
-  Divider,
-  Heading,
-  Link,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Social from "../components/Social";
 
 export default function Home() {
   return (
-    <Box maxW="680px" mx="auto">
+    <Box maxW="680px" mx="auto" px="8px">
       <Head>
         <title>JP Ungaretti</title>
         <meta

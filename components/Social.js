@@ -1,15 +1,28 @@
-import styles from "../styles/Social.module.css";
+import {
+  Button,
+  ListItem,
+  UnorderedList,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 
 export default function Social() {
   return (
-    <ul className={styles.list}>
-      <li className={styles.item}>
-        <a href="https://github.com/jungaretti/" target="_blank">
-          <div className={styles.body}>
-            <p>GitHub</p>
-          </div>
-        </a>
-      </li>
-    </ul>
+    <UnorderedList ml="0" styleType="none">
+      <ListItem display="inline-block">
+        <Wrap mt="16px">
+          <WrapItem>
+            <Button
+              variant="solid"
+              as="a"
+              href="https://github.com/jungaretti/"
+              target="_blank"
+            >
+              GitHub
+            </Button>
+          </WrapItem>
+        </Wrap>
+      </ListItem>
+    </UnorderedList>
   );
 }
