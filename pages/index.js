@@ -16,6 +16,13 @@ export default function Home() {
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
           </p>
+          <ul>
+            <li>
+              <a href="https://github.com/jungaretti/" target="_blank">
+                GitHub
+              </a>
+            </li>
+          </ul>
           {/* Personal dashboard can be shown here */}
         </section>
         <section>
@@ -38,7 +45,13 @@ export default function Home() {
       <footer>
         <hr />
         <div>
-          <p>Crafted with Next.js in Madison, Wisconsin.</p>
+          <p>
+            Crafted with{" "}
+            <a href="https://nextjs.org/" target="_blank">
+              Next.js
+            </a>{" "}
+            in Madison, Wisconsin.
+          </p>
           <p>MIT License © 2021 James Ungaretti.</p>
         </div>
       </footer>
