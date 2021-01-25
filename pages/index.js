@@ -1,56 +1,65 @@
+import {
+  Box,
+  Divider,
+  Heading,
+  Link,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <>
+    <Box>
       <Head>
         <title>JP Ungaretti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <section>
-          <h1>Ciao, I'm JP Ungaretti.</h1>
-          <p>
+          <Heading>Ciao, I'm JP Ungaretti.</Heading>
+          <Text>
             I'm a developer studying computer science and Italian. I love to
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
-          </p>
-          <ul>
-            <li>
-              <a href="https://github.com/jungaretti/" target="_blank">
+          </Text>
+          <UnorderedList>
+            <ListItem>
+              <Link href="https://github.com/jungaretti/" isExternal>
                 GitHub
-              </a>
-            </li>
-          </ul>
+              </Link>
+            </ListItem>
+          </UnorderedList>
           {/* Personal dashboard can be shown here */}
         </section>
         <section>
-          <h3>Projects</h3>
-          <p>Coming soon...</p>
+          <Heading>Projects</Heading>
+          <Text>Coming soon...</Text>
         </section>
         <section>
-          <h3>Recent Posts</h3>
-          <p>Coming soon...</p>
+          <Heading>Blog Posts</Heading>
+          <Text>Coming soon...</Text>
         </section>
         <section>
-          <h3>Bookmarks</h3>
-          <p>Coming soon...</p>
+          <Heading>Bookmarks</Heading>
+          <Text>Coming soon...</Text>
         </section>
       </main>
       <footer>
-        <hr />
-        <div>
-          <p>
+        <Divider />
+        <Box>
+          <Text>
             Crafted with{" "}
-            <a href="https://nextjs.org/" target="_blank">
+            <Link href="https://nextjs.org/" isExternal>
               Next.js
-            </a>{" "}
-            in Madison, Wisconsin.
-          </p>
-          <p>MIT License © 2021 James Ungaretti.</p>
-        </div>
+            </Link>{" "}
+            in Madison, Wisconsin
+          </Text>
+          <Text>MIT License © 2021 James Ungaretti.</Text>
+        </Box>
       </footer>
-    </>
+    </Box>
   );
 }
