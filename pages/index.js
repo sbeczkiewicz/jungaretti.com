@@ -18,9 +18,7 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Box as="main">
-        <Box as="section" mt={8}>
-          <Welcome />
-        </Box>
+        <Welcome />
         <Box as="section" mt={4}>
           <Heading>Projects</Heading>
           <Text>Coming soon...</Text>
