@@ -1,15 +1,6 @@
-import {
-  Box,
-  Divider,
-  Heading,
-  Link,
-  Text,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
 import Head from "next/head";
-import { FaGithub } from "react-icons/fa";
-import SocialLink from "../components/SocialLink";
+import Welcome from "../components/sections/Welcome";
 
 export default function Home() {
   return (
@@ -26,23 +17,8 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Box as="main">
-        <Box as="section" mt={6}>
-          <Heading>Ciao, I'm JP Ungaretti.</Heading>
-          <Text mt={2}>
-            I'm a developer studying computer science and Italian. I love to
-            swim, play board games, mess around with Linux, and explore nature.
-            Welcome to my corner of the Internet!
-          </Text>
-          <Wrap mt={2}>
-            <WrapItem>
-              <SocialLink
-                name="GitHub"
-                link="https://github.com/jungaretti/"
-                icon={<FaGithub />}
-              />
-            </WrapItem>
-          </Wrap>
-          {/* Personal dashboard can be shown here */}
+        <Box as="section" mt={8}>
+          <Welcome />
         </Box>
         <Box as="section" mt={4}>
           <Heading>Projects</Heading>
