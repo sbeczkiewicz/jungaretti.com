@@ -1,5 +1,6 @@
-import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
+import Footer from "../components/sections/Footer";
 import Welcome from "../components/sections/Welcome";
 
 export default function Home() {
@@ -33,23 +34,7 @@ export default function Home() {
           <Text>Coming soon...</Text>
         </Box>
       </Box>
-      <Box as="footer" mt={4}>
-        <Divider />
-        <Box mt={4}>
-          <Text>
-            Crafted with{" "}
-            <Link href="https://nextjs.org/" isExternal>
-              Next.js
-            </Link>{" "}
-            and
-            <Link href="https://chakra-ui.com/" isExternal>
-              Chakra UI
-            </Link>{" "}
-            in Madison, Wisconsin.
-          </Text>
-          <Text>MIT License © 2021 James Ungaretti.</Text>
-        </Box>
-      </Box>
+      <Footer />
     </Box>
   );
 }
