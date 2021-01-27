@@ -1,6 +1,15 @@
-import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  Link,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import Head from "next/head";
-import Social from "../components/Social";
+import { FaGithub } from "react-icons/fa";
+import SocialLink from "../components/SocialLink";
 
 export default function Home() {
   return (
@@ -24,9 +33,15 @@ export default function Home() {
             swim, play board games, mess around with Linux, and explore nature.
             Welcome to my corner of the Internet!
           </Text>
-          <Box mt={2}>
-            <Social />
-          </Box>
+          <Wrap mt={2}>
+            <WrapItem>
+              <SocialLink
+                name="GitHub"
+                link="https://github.com/jungaretti/"
+                icon={<FaGithub />}
+              />
+            </WrapItem>
+          </Wrap>
           {/* Personal dashboard can be shown here */}
         </Box>
         <Box as="section" mt={4}>
