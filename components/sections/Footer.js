@@ -2,7 +2,7 @@ import { Box, Divider, Link, Text } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <footer>
+    <Box as="footer">
       <Divider />
       <Box>
         <Text>
@@ -18,6 +18,6 @@ export default function Footer() {
         </Text>
         <Text>MIT License © 2021 James Ungaretti.</Text>
       </Box>
-    </footer>
+    </Box>
   );
 }
