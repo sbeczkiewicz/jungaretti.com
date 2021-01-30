@@ -1,3 +1,7 @@
+# jungaretti.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd09cdaf-8f09-458f-b537-e6a2c133f0ce/deploy-status)](https://app.netlify.com/sites/jungaretti/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
