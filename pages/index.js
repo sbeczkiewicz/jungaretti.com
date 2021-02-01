@@ -1,11 +1,20 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Divider,
+  Heading,
+  Link,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import Footer from "../components/sections/Footer";
 import Welcome from "../components/sections/Welcome";
 
 export default function Home() {
   return (
-    <Box maxW="680px" mx="auto" px="8px">
+    <Container maxW="2xl">
       <Head>
         <title>JP Ungaretti</title>
         <meta
@@ -17,22 +26,17 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <Box as="main">
+      <main>
         <Welcome />
-        <Box as="section" mt={4}>
-          <Heading>Projects</Heading>
-          <Text>Coming soon...</Text>
-        </Box>
-        <Box as="section" mt={4}>
-          <Heading>Blog Posts</Heading>
-          <Text>Coming soon...</Text>
-        </Box>
-        <Box as="section" mt={4}>
-          <Heading>Bookmarks</Heading>
-          <Text>Coming soon...</Text>
-        </Box>
-      </Box>
+        <section>
+          <Text>
+            I'm a developer studying computer science and Italian. I love to
+            swim, play board games, mess around with Linux, and visit national
+            parks. Welcome to my corner of the Internet!
+          </Text>
+        </section>
+      </main>
       <Footer />
-    </Box>
+    </Container>
   );
 }
