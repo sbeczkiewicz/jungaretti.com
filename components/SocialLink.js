@@ -1,9 +1,16 @@
-import { Button } from "@chakra-ui/react";
+import { Button, IconButton, Link } from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
 
 export default function SocialLink({ name, link, icon }) {
   return (
-    <Button leftIcon={icon} as="a" href={link} target="_blank">
+    <IconButton
+      as={Link}
+      aria-label="GitHub"
+      href={link}
+      icon={<FaGithub />}
+      isExternal
+    >
       {name}
-    </Button>
+    </IconButton>
   );
 }
