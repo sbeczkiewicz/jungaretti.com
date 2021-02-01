@@ -1,10 +1,9 @@
-import { Divider, Text, Link } from "@chakra-ui/react";
-import styles from "../../styles/Footer.module.css";
+import { Divider, Text, Link, Box } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
-      <Divider className={styles.divider} />
+    <Box as="footer">
+      <Divider marginTop="12px" marginBottom="4px" />
       <Text>
         Crafted with{" "}
         <Link href="https://nextjs.org/" isExternal>
@@ -17,6 +16,6 @@ export default function Footer() {
         in Madison, Wisconsin.
       </Text>
       <Text>MIT License © 2021 James Ungaretti.</Text>
-    </footer>
+    </Box>
   );
 }
