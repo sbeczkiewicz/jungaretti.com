@@ -10,7 +10,7 @@ export default function Home() {
         <title>JP Ungaretti</title>
         <meta
           name="description"
-          content="I'm a developer studying computer science and Italian. Welcome to my corner of the Internet!"
+          content="I'm a developer studying computer science and Italian in Madison, Wisconsin. Welcome to my corner of the Internet!"
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
