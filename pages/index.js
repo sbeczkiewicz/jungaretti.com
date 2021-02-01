@@ -1,13 +1,4 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Heading,
-  Link,
-  Text,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Container, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Footer from "../components/sections/Footer";
 import Nav from "../components/sections/Nav";
@@ -27,8 +18,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <header>
-      </header>
+      <Nav />
       <main>
         <Welcome />
         <section>
