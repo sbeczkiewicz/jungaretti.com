@@ -1,18 +1,17 @@
-import { Box, Flex, Link, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Spacer, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav>
-      <Flex>
-        <Box>
-          <Text>JP Ungaretti</Text>
-        </Box>
-        <Spacer />
-        <Box>
-          <Link>Home</Link>
-          <Link>Blog</Link>
-        </Box>
-      </Flex>
-    </nav>
+    <Flex as="nav" marginY="12px">
+      <Box>
+        <Heading size="md">JP Ungaretti</Heading>
+      </Box>
+      <Spacer />
+      <Stack direction="row">
+        <Link href="/">Home</Link>
+        {/* <Link href="/blog">Blog</Link> */}
+      </Stack>
+    </Flex>
   );
 }
