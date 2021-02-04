@@ -1,12 +1,9 @@
-import { Container, Text } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Head from "next/head";
-import Footer from "../components/sections/Footer";
-import Nav from "../components/sections/Nav";
-import Welcome from "../components/sections/Welcome";
 
 export default function Home() {
   return (
-    <Container maxW="2xl">
+    <Container>
       <Head>
         <title>JP Ungaretti</title>
         <meta
@@ -18,18 +15,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <Nav />
-      <main>
-        <Welcome />
-        <section>
-          <Text>
-            I'm a developer studying computer science and Italian. I love to
-            swim, play board games, mess around with Linux, and visit national
-            parks. Welcome to my corner of the Internet!
-          </Text>
-        </section>
-      </main>
-      <Footer />
+      <p>Hello, world!</p>
     </Container>
   );
 }
