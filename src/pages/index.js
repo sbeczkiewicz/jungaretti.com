@@ -1,5 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Section from "../components/Section";
 import Welcome from "../components/Welcome";
@@ -23,6 +24,7 @@ export default function Home() {
       <Section title="Neat Projects" />
       <Section title="Recent Thoughts" />
       <Section title="Good Memories" />
+      <Footer />
     </Container>
   );
 }
