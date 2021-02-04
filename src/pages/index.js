@@ -1,5 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <p>Hello, world!</p>
+      <Nav />
     </Container>
   );
 }
