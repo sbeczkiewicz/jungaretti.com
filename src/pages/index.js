@@ -1,6 +1,7 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
 import Nav from "../components/Nav";
+import Welcome from "../components/Welcome";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Nav />
+      <Welcome />
     </Container>
   );
 }
