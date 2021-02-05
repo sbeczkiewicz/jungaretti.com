@@ -1,7 +1,7 @@
 import { Container } from "@chakra-ui/react";
 import Head from "next/head";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Nav from "../components/Nav";
 import Section from "../components/Section";
 import Welcome from "../components/Welcome";
 
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <Nav />
+      <Header />
       <Welcome />
       <Section title="Neat Projects" />
       <Section title="Recent Thoughts" />

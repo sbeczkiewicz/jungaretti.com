@@ -1,4 +1,4 @@
-export default function Nav() {
+export default function Header() {
   return (
     <header>
       <p>JP Ungaretti</p>
