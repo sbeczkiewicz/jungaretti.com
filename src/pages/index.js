@@ -1,4 +1,3 @@
-import { Container } from "@chakra-ui/react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,7 +6,7 @@ import Welcome from "../components/Welcome";
 
 export default function Home() {
   return (
-    <Container>
+    <div>
       <Head>
         <title>JP Ungaretti</title>
         <meta
@@ -25,6 +24,6 @@ export default function Home() {
       <Section title="Recent Thoughts" />
       <Section title="Good Memories" />
       <Footer />
-    </Container>
+    </div>
   );
 }

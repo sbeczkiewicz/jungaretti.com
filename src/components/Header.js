@@ -1,12 +1,18 @@
+import { Flex, Spacer, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header>
-      <p>JP Ungaretti</p>
-      <nav>
-        <p>Home</p>
-        <p>Blog</p>
-        <p>Contact</p>
-      </nav>
+      <Flex padding="30px">
+        <Text fontWeight="bold">JP Ungaretti</Text>
+        <Spacer />
+        <Stack as="nav" direction="row" spacing="30px">
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contact">Contact</Link>
+        </Stack>
+      </Flex>
     </header>
   );
 }
