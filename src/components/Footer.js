@@ -1,11 +1,12 @@
-import { Container, Flex } from "@chakra-ui/react";
+import { Container, Divider, Stack } from "@chakra-ui/react";
 import FooterColumn from "./FooterColumn";
 
 export default function Footer() {
   return (
     <footer>
-      <Container>
-        <Flex>
+      <Container maxW="2xl">
+        <Divider mt={4} mb={2} />
+        <Stack spacing={4} direction={["column", null, "row"]}>
           <FooterColumn title="Here">
             <span>Blog</span>
             <span>Home</span>
@@ -23,7 +24,7 @@ export default function Footer() {
             </span>
             <span>MIT License © 2021 James Ungaretti.</span>
           </FooterColumn>
-        </Flex>
+        </Stack>
       </Container>
     </footer>
   );

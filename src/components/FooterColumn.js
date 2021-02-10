@@ -6,7 +6,7 @@ export default function FooterColumn({ title, children }) {
       <Heading as="h6" size="sm">
         {title}
       </Heading>
-      {children}
+      <Stack spacing={0}>{children}</Stack>
     </Stack>
   );
 }
