@@ -20,20 +20,22 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Header />
-      <Welcome />
-      <Container maxW="2xl">
-        <Stack my={4} spacing={4}>
-          <Section title="Neat Projects">
-            <p>Coming soon...</p>
-          </Section>
-          <Section title="Recent Thoughts">
-            <p>Coming soon...</p>
-          </Section>
-          <Section title="Good Memories">
-            <p>Coming soon...</p>
-          </Section>
-        </Stack>
-      </Container>
+      <main>
+        <Welcome />
+        <Container maxW="2xl">
+          <Stack my={4} spacing={4}>
+            <Section title="Neat Projects">
+              <p>Coming soon...</p>
+            </Section>
+            <Section title="Recent Thoughts">
+              <p>Coming soon...</p>
+            </Section>
+            <Section title="Good Memories">
+              <p>Coming soon...</p>
+            </Section>
+          </Stack>
+        </Container>
+      </main>
       <Footer />
     </div>
   );
