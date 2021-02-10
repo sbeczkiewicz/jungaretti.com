@@ -1,5 +1,15 @@
-import { Container, Divider, Stack } from "@chakra-ui/react";
-import FooterColumn from "./FooterColumn";
+import { Container, Divider, Heading, Stack } from "@chakra-ui/react";
+
+function FooterColumn({ title, children }) {
+  return (
+    <Stack>
+      <Heading as="h6" size="sm">
+        {title}
+      </Heading>
+      <Stack spacing={0}>{children}</Stack>
+    </Stack>
+  );
+}
 
 export default function Footer() {
   return (
