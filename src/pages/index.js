@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Welcome from "../components/Welcome";
-import { Container } from "@chakra-ui/react";
+import { Container, Stack } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -21,10 +21,18 @@ export default function Home() {
       </Head>
       <Header />
       <Welcome />
-      <Container>
-        <Section title="Neat Projects" />
-        <Section title="Recent Thoughts" />
-        <Section title="Good Memories" />
+      <Container maxW="2xl">
+        <Stack my={4} spacing={4}>
+          <Section title="Neat Projects">
+            <p>Coming soon...</p>
+          </Section>
+          <Section title="Recent Thoughts">
+            <p>Coming soon...</p>
+          </Section>
+          <Section title="Good Memories">
+            <p>Coming soon...</p>
+          </Section>
+        </Stack>
       </Container>
       <Footer />
     </div>
