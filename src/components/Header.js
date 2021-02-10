@@ -4,15 +4,17 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <Container>
+      <Container py={4} maxW="2xl">
         <Flex>
           <Text fontWeight="bold">JP Ungaretti</Text>
           <Spacer />
-          <Stack as="nav" direction="row">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/contact">Contact</Link>
-          </Stack>
+          <nav>
+            <Stack direction="row" spacing={[2, null, 4]}>
+              <Link href="/">Home</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/contact">Contact</Link>
+            </Stack>
+          </nav>
         </Flex>
       </Container>
     </header>
