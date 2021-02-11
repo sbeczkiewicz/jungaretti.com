@@ -1,10 +1,10 @@
-import { Container, Flex, Spacer, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Spacer, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
-      <Container py={4}>
+    <Box as="header" marginY={4}>
+      <Container>
         <Flex>
           <Text fontWeight="bold">JP Ungaretti</Text>
           <Spacer />
@@ -17,6 +17,6 @@ export default function Header() {
           </nav>
         </Flex>
       </Container>
-    </header>
+    </Box>
   );
 }

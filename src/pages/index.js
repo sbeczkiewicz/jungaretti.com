@@ -20,9 +20,9 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
       <Header />
-      <main>
-        <Welcome />
-        <Container>
+      <Welcome />
+      <Container>
+        <main>
           <Stack my={4} spacing={4}>
             <Section title="Neat Projects">
               <p>Coming soon...</p>
@@ -34,9 +34,9 @@ export default function Home() {
               <p>Coming soon...</p>
             </Section>
           </Stack>
-        </Container>
-      </main>
-      <Footer />
+        </main>
+        <Footer />
+      </Container>
     </div>
   );
 }
