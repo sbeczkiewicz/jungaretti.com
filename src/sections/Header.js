@@ -8,13 +8,11 @@ export default function Header() {
         <Flex>
           <Text fontWeight="bold">JP Ungaretti</Text>
           <Spacer />
-          <nav>
-            <Stack direction="row" spacing={[2, null, 4]}>
-              <Link href="/">Home</Link>
-              {/* <Link href="/blog">Blog</Link> */}
-              {/* <Link href="/contact">Contact</Link> */}
-            </Stack>
-          </nav>
+          <Stack as="nav" direction="row" spacing={[2, null, 4]}>
+            <Link href="/">Home</Link>
+            {/* <Link href="/blog">Blog</Link> */}
+            {/* <Link href="/contact">Contact</Link> */}
+          </Stack>
         </Flex>
       </Container>
     </Box>
