@@ -11,8 +11,8 @@ export default function Header() {
           <nav>
             <Stack direction="row" spacing={[2, null, 4]}>
               <Link href="/">Home</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/contact">Contact</Link>
+              {/* <Link href="/blog">Blog</Link> */}
+              {/* <Link href="/contact">Contact</Link> */}
             </Stack>
           </nav>
         </Flex>
