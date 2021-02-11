@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <Box as="footer" marginY={4}>
       <Divider marginBottom={4} />
-      <Stack spacing={8} direction={["column", null, "row"]}>
+      <Stack spacing={[4, null, 8]} direction={["column", null, "row"]}>
         <FooterColumn title="Here">
           <Link href="/">Home</Link>
           {/* <Link href="/blog">Blog</Link> */}
