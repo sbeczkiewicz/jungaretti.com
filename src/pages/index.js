@@ -1,9 +1,9 @@
-import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Section from "../components/Section";
-import Welcome from "../components/Welcome";
 import { Container, Stack } from "@chakra-ui/react";
+import Head from "next/head";
+import Section from "../components/Section";
+import Header from "../sections/Header";
+import Welcome from "../sections/Welcome";
+import Footer from "../sections/Footer";
 
 export default function Home() {
   return (
