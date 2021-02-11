@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start": "next start",
     "build": "next build",
     "build-static": "next build && next export",
-    "start": "next start"
+    "dev": "next dev",
+    "format": "prettier --write src"
   },
   "dependencies": {
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
