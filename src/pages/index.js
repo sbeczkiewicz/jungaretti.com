@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -14,9 +16,11 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
+      <Header />
       <main>
         <h1>Hello World</h1>
       </main>
+      <Footer />
     </div>
   );
 }
