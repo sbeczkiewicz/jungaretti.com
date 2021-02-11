@@ -1,6 +1,6 @@
 import { Container, Stack } from "@chakra-ui/react";
 import Head from "next/head";
-import Section from "../components/Section";
+import Showcase from "../components/Showcase";
 import Header from "../sections/Header";
 import Welcome from "../sections/Welcome";
 import Footer from "../sections/Footer";
@@ -24,15 +24,15 @@ export default function Home() {
       <Container>
         <main>
           <Stack my={4} spacing={4}>
-            <Section title="Neat Projects">
+            <Showcase title="Neat Projects">
               <p>Coming soon...</p>
-            </Section>
-            <Section title="Recent Thoughts">
+            </Showcase>
+            <Showcase title="Recent Thoughts">
               <p>Coming soon...</p>
-            </Section>
-            <Section title="Good Memories">
+            </Showcase>
+            <Showcase title="Good Memories">
               <p>Coming soon...</p>
-            </Section>
+            </Showcase>
           </Stack>
         </main>
         <Footer />
