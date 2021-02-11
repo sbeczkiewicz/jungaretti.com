@@ -4,7 +4,7 @@ export default function Welcome() {
   return (
     <section>
       <Box py={10} backgroundColor="black" color="white">
-        <Container maxW="2xl">
+        <Container>
           <Heading>Ciao, I'm JP!</Heading>
           <p>
             I'm a developer studying computer science and Italian. I love to

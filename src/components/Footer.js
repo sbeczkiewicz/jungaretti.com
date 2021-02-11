@@ -14,7 +14,7 @@ function FooterColumn({ title, children }) {
 export default function Footer() {
   return (
     <footer>
-      <Container maxW="2xl">
+      <Container>
         <Divider mb={2} />
         <Stack spacing={4} direction={["column", null, "row"]}>
           <FooterColumn title="Here">

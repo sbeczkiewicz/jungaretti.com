@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <Container py={4} maxW="2xl">
+      <Container py={4}>
         <Flex>
           <Text fontWeight="bold">JP Ungaretti</Text>
           <Spacer />

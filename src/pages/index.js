@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
       <main>
         <Welcome />
-        <Container maxW="2xl">
+        <Container>
           <Stack my={4} spacing={4}>
             <Section title="Neat Projects">
               <p>Coming soon...</p>
