@@ -19,6 +19,14 @@ export default function Home() {
       </Head>
       <Header name="JP Ungaretti" links={[{ title: "Home", href: "/" }]} />
       <main>
+        <div className="bg-black text-white">
+          <h1 className="text-4xl font-bold">Ciao, I'm JP!</h1>
+          <p>
+            I'm a developer studying computer science and Italian. I love to
+            swim, play board games, mess around with Linux, and visit national
+            parks. Welcome to my corner of the Internet!
+          </p>
+        </div>
         <Showcase title="Neat Projects">
           <p>Coming soon...</p>
         </Showcase>
