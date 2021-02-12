@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Showcase from "../components/Showcase";
 
 export default function Home() {
   return (
@@ -19,15 +20,15 @@ export default function Home() {
       <Header />
       <main>
         <h1>Hello World</h1>
-        <section>
-          <h1>Neat Projects</h1>
-        </section>
-        <section>
-          <h1>Recent Thoughts</h1>
-        </section>
-        <section>
-          <h1>Good Memories</h1>
-        </section>
+        <Showcase title="Neat Projects">
+          <p>Coming soon...</p>
+        </Showcase>
+        <Showcase title="Recent Thoughts">
+          <p>Coming soon...</p>
+        </Showcase>
+        <Showcase title="Good Memories">
+          <p>Coming soon...</p>
+        </Showcase>
       </main>
       <Footer />
     </div>
