@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <Header />
+      <Header name="JP Ungaretti" links={[{ title: "Home", href: "/" }]} />
       <main>
         <Showcase title="Neat Projects">
           <p>Coming soon...</p>
