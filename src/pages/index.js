@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
 
+const headerLinks = [{ title: "Home", href: "/" }];
+
 export default function Home() {
   return (
     <div>
@@ -17,7 +19,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <Header name="JP Ungaretti" links={[{ title: "Home", href: "/" }]} />
+      <Header name="JP Ungaretti" links={headerLinks} />
       <main>
         <div className="bg-black text-white">
           <h1 className="text-4xl font-bold">Ciao, I'm JP!</h1>
