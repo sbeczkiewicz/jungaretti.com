@@ -19,6 +19,15 @@ export default function Home() {
       <Header />
       <main>
         <h1>Hello World</h1>
+        <section>
+          <h1>Neat Projects</h1>
+        </section>
+        <section>
+          <h1>Recent Thoughts</h1>
+        </section>
+        <section>
+          <h1>Good Memories</h1>
+        </section>
       </main>
       <Footer />
     </div>
