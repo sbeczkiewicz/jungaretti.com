@@ -19,7 +19,6 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <h1>Hello World</h1>
         <Showcase title="Neat Projects">
           <p>Coming soon...</p>
         </Showcase>
