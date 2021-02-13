@@ -24,17 +24,19 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div className="bg-black text-white px-4 py-8">
-          <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
-            Ciao, I'm JP!
-          </h1>
-          <p>
-            I'm a developer studying computer science and Italian. I love to
-            swim, play board games, mess around with Linux, and visit national
-            parks. Welcome to my corner of the Internet!
-          </p>
+        <div className="bg-black text-white">
+          <div className="max-w-screen-md py-8 px-4 my-4 mx-auto space-y-2">
+            <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
+              Ciao, I'm JP!
+            </h1>
+            <p>
+              I'm a developer studying computer science and Italian. I love to
+              swim, play board games, mess around with Linux, and visit national
+              parks. Welcome to my corner of the Internet!
+            </p>
+          </div>
         </div>
-        <div className="px-4 my-4 space-y-2">
+        <div className="max-w-screen-md px-4 my-4 mx-auto space-y-2">
           <Showcase title="Neat Projects">
             <p>Coming soon...</p>
           </Showcase>
