@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="p-4">
+    <header className="px-4 my-4">
       <div className="flex">
         <div className="flex-auto">
           <span className="font-bold">JP Ungaretti</span>

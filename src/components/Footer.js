@@ -1,6 +1,6 @@
 function FooterColumn({ title, children }) {
   return (
-    <div className="sm:ml-2 sm:first:ml-0">
+    <div>
       <h5 className="font-bold">{title}</h5>
       {children}
     </div>
@@ -9,9 +9,9 @@ function FooterColumn({ title, children }) {
 
 export default function Footer() {
   return (
-    <footer>
-      <hr className="mb-1" />
-      <div className="sm:flex">
+    <footer className="px-4 my-4">
+      <hr />
+      <div className="mt-4 space-y-2 sm:space-y-0 sm:flex sm:space-x-4">
         <FooterColumn title="Here">
           <span>Home</span>
         </FooterColumn>

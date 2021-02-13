@@ -32,7 +32,7 @@ export default function Home() {
             parks. Welcome to my corner of the Internet!
           </p>
         </div>
-        <div className="px-4 my-4 space-y-4">
+        <div className="px-4 my-4 space-y-2">
           <Showcase title="Neat Projects">
             <p>Coming soon...</p>
           </Showcase>
