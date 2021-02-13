@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
               Ciao, I'm JP!
             </h1>
-            <p>
+            <p className="font-medium">
               I'm a developer studying computer science and Italian. I love to
               swim, play board games, mess around with Linux, and visit national
               parks. Welcome to my corner of the Internet!
