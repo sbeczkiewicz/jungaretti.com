@@ -44,7 +44,7 @@ export default function Footer() {
             <a href="https://lowmess.com/" target="_blank">
               Alec Lomas
             </a>
-            .
+            . MIT License © 2021 James Ungaretti.
           </p>
         </FooterColumn>
       </div>
