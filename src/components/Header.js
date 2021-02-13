@@ -1,19 +1,17 @@
 import Link from "next/link";
 
-export default function Header({ name, links }) {
+export default function Header() {
   return (
-    <header>
-      <div className="flex text-lg">
+    <header className="p-4">
+      <div className="flex">
         <div className="flex-auto">
-          <span className="font-bold">{name}</span>
+          <span className="font-bold">JP Ungaretti</span>
         </div>
         <div>
-          <ul className="flex">
-            {links.map(({ href, title }) => (
-              <li>
-                <Link href={href}>{title}</Link>
-              </li>
-            ))}
+          <ul className="flex space-x-2">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
           </ul>
         </div>
       </div>

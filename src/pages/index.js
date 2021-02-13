@@ -3,8 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
 
-const headerLinks = [{ title: "Home", href: "/" }];
-
 export default function Home() {
   return (
     <div>
@@ -24,10 +22,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Header name="JP Ungaretti" links={headerLinks} />
+      <Header />
       <main>
         <div className="bg-black text-white py-8">
-          <h1 className="text-4xl font-bold">Ciao, I'm JP!</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Ciao, I'm JP!</h1>
           <p>
             I'm a developer studying computer science and Italian. I love to
             swim, play board games, mess around with Linux, and visit national
