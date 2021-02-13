@@ -11,9 +11,9 @@ function FooterColumn({ title, children }) {
 
 export default function Footer() {
   return (
-    <footer className="max-w-screen-md px-4 my-4 mx-auto space-y-2">
+    <footer className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
       <hr />
-      <div className="mt-4 space-y-2 sm:space-y-0 sm:flex sm:space-x-4">
+      <div className="mt-4 space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
         <FooterColumn title="Here">
           <span className="underline">
             <Link href="/">Home</Link>
