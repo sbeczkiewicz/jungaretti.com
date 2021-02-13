@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div className="bg-black text-white py-8">
+        <div className="bg-black text-white px-4 py-8">
           <h1 className="text-3xl md:text-5xl font-bold">Ciao, I'm JP!</h1>
           <p>
             I'm a developer studying computer science and Italian. I love to
@@ -32,15 +32,17 @@ export default function Home() {
             parks. Welcome to my corner of the Internet!
           </p>
         </div>
-        <Showcase title="Neat Projects">
-          <p>Coming soon...</p>
-        </Showcase>
-        <Showcase title="Recent Thoughts">
-          <p>Coming soon...</p>
-        </Showcase>
-        <Showcase title="Good Memories">
-          <p>Coming soon...</p>
-        </Showcase>
+        <div className="px-4 my-4 space-y-4">
+          <Showcase title="Neat Projects">
+            <p>Coming soon...</p>
+          </Showcase>
+          <Showcase title="Recent Thoughts">
+            <p>Coming soon...</p>
+          </Showcase>
+          <Showcase title="Good Memories">
+            <p>Coming soon...</p>
+          </Showcase>
+        </div>
       </main>
       <Footer />
     </div>
