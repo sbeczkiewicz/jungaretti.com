@@ -18,10 +18,15 @@ export default function Home() {
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header name="JP Ungaretti" links={headerLinks} />
       <main>
-        <div className="bg-black text-white">
+        <div className="bg-black text-white py-8">
           <h1 className="text-4xl font-bold">Ciao, I'm JP!</h1>
           <p>
             I'm a developer studying computer science and Italian. I love to
