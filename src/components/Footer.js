@@ -1,25 +1,18 @@
 import Link from "next/link";
 
-function FooterColumn({ title, children }) {
-  return (
-    <div>
-      <h5 className="font-bold">{title}</h5>
-      {children}
-    </div>
-  );
-}
-
 export default function Footer() {
   return (
     <footer className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
       <hr />
-      <div className="mt-4 space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
-        <FooterColumn title="Here">
+      <div className="mt-4 space-y-2 sm:space-y-0 sm:flex sm:space-x-4">
+        <div>
+          <h5 className="font-bold">Here</h5>
           <span className="underline">
             <Link href="/">Home</Link>
           </span>
-        </FooterColumn>
-        <FooterColumn title="There">
+        </div>
+        <div>
+          <h5 className="font-bold">There</h5>
           <a
             href="https://github.com/jungaretti/"
             target="_blank"
@@ -27,8 +20,8 @@ export default function Footer() {
           >
             GitHub
           </a>
-        </FooterColumn>
-        <FooterColumn title="Everywhere">
+        </div>
+        <div>
           <p>
             Crafted with{" "}
             <a href="https://nextjs.org/" target="_blank" className="underline">
@@ -60,7 +53,7 @@ export default function Footer() {
             </a>
             . MIT License © 2021 James Ungaretti.
           </p>
-        </FooterColumn>
+        </div>
       </div>
     </footer>
   );
