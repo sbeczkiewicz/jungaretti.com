@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -36,16 +37,55 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="max-w-screen-md px-4 my-4 mx-auto space-y-2">
+        <div className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
           <Showcase title="Neat Projects">
-            <p>Coming soon...</p>
+            <Project
+              title="jungaretti.com"
+              description="My personal website built with Next.js and Tailwind CSS. Thanks for checking it out!"
+              links={[
+                {
+                  title: "Repository",
+                  href: "https://github.com/jungaretti/jungaretti.com",
+                },
+              ]}
+            />
+            <Project
+              title="Milk Chugger"
+              description="An innovative solution to a problem faced by 5.6 million Wisconsinites: logging milk consumption. Steve Beczkiewicz and I built Milk Chugger during a weekend hackathon."
+              links={[
+                {
+                  title: "Repository",
+                  href: "https://github.com/jungaretti/milk-chugger/",
+                },
+                {
+                  title: "Steve's Website",
+                  href: "https://sbeczkiewicz.github.io/",
+                },
+              ]}
+            />
+            <Project
+              title="LeetCode"
+              description="Efficient solutions to LeetCode challenges written in several programming languages."
+              links={[
+                {
+                  title: "Repository",
+                  href: "https://github.com/jungaretti/leetcode",
+                },
+              ]}
+            />
+            <Project
+              title="Digist"
+              description="Transforms your GitHub Gists into highly-functional code snippets for the web."
+              links={[
+                {
+                  title: "Repository",
+                  href: "https://github.com/jungaretti/digist",
+                },
+              ]}
+            />
           </Showcase>
-          <Showcase title="Recent Thoughts">
-            <p>Coming soon...</p>
-          </Showcase>
-          <Showcase title="Good Memories">
-            <p>Coming soon...</p>
-          </Showcase>
+          {/* <Showcase title="Recent Thoughts"></Showcase> */}
+          {/* <Showcase title="Good Memories"></Showcase> */}
         </div>
       </main>
       <Footer />
