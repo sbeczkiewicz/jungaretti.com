@@ -3,9 +3,9 @@ import FooterGroup from "./FooterGroup";
 
 export default function Footer() {
   return (
-    <footer className="container pb-4 space-y-4">
+    <footer className="container pb-6">
       <hr />
-      <div className="space-y-4 md:flex md:space-y-0 md:space-x-8">
+      <div className="mt-6 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
         <FooterGroup title="Here">
           <Link title="Home" href="/" />
         </FooterGroup>
@@ -30,8 +30,8 @@ export default function Footer() {
             <Link title="Griko Nibras" href="https://griko.id/" isExternal />,
             and{" "}
             <Link title="Alec Lomas" href="https://lowmess.com/" isExternal />.
+            MIT License © 2021 James Ungaretti.
           </p>
-          <p>MIT License © 2021 James Ungaretti.</p>
         </FooterGroup>
       </div>
     </footer>
