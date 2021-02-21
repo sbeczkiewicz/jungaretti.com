@@ -46,6 +46,7 @@ export default function Home() {
                 {
                   title: "Repository",
                   href: "https://github.com/jungaretti/jungaretti.com",
+                  isExternal: true,
                 },
               ]}
             />
@@ -56,10 +57,12 @@ export default function Home() {
                 {
                   title: "Repository",
                   href: "https://github.com/jungaretti/milk-chugger/",
+                  isExternal: true,
                 },
                 {
                   title: "Steve's Website",
                   href: "https://sbeczkiewicz.github.io/",
+                  isExternal: true,
                 },
               ]}
             />
@@ -70,6 +73,7 @@ export default function Home() {
                 {
                   title: "Repository",
                   href: "https://github.com/jungaretti/leetcode",
+                  isExternal: true,
                 },
               ]}
             />
@@ -80,6 +84,7 @@ export default function Home() {
                 {
                   title: "Repository",
                   href: "https://github.com/jungaretti/digist",
+                  isExternal: true,
                 },
               ]}
             />

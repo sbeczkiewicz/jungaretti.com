@@ -1,3 +1,5 @@
+import Link from "./Link";
+
 export default function Project({ title, description, links }) {
   return (
     <div>
@@ -5,11 +7,9 @@ export default function Project({ title, description, links }) {
       <p>{description}</p>
       <ul className="flex space-x-2">
         {links &&
-          links.map(({ title, href }) => (
+          links.map(({ title, href, isExternal }) => (
             <li className="underline">
-              <a href={href} target="_blank">
-                {title}
-              </a>
+              <Link title={title} href={href} isExternal={isExternal} />
             </li>
           ))}
       </ul>
