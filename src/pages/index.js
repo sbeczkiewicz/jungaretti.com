@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <main>
         <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
-          <div className="max-w-screen-md py-10 px-4 my-4 mx-auto space-y-2">
+          <div className="max-w-screen-md py-11 px-4 my-4 mx-auto space-y-2">
             <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
               Ciao, I'm JP!
             </h1>
