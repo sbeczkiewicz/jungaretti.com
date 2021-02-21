@@ -1,5 +1,13 @@
 import Link from "../components/Link";
-import FooterGroup from "./FooterGroup";
+
+function FooterGroup({ title, children }) {
+  return (
+    <div>
+      {title && <h5 className="font-bold">{title}</h5>}
+      <div>{children}</div>
+    </div>
+  );
+}
 
 export default function Footer() {
   return (
