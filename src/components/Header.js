@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="max-w-screen-md px-4 py-5 mx-auto">
+    <header className="container py-6">
       <div className="flex">
         <div className="flex-auto">
           <span className="font-bold">JP Ungaretti</span>
