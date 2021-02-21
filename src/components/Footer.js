@@ -3,7 +3,7 @@ import FooterGroup from "./FooterGroup";
 
 export default function Footer() {
   return (
-    <footer className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
+    <footer className="container pb-4 space-y-4">
       <hr />
       <div className="space-y-4 md:flex md:space-y-0 md:space-x-8">
         <FooterGroup title="Here">

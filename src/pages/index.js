@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Showcase from "../components/Showcase";
+import Gallery from "../components/Gallery";
 import Project from "../components/Project";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <main>
         <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
-          <div className="max-w-screen-md py-11 px-4 my-4 mx-auto space-y-2">
+          <div className="container py-11 space-y-2">
             <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
               Ciao, I'm JP!
             </h1>
@@ -37,8 +37,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
-          <Showcase title="Neat Projects">
+        <div className="container py-4">
+          <Gallery title="Neat Projects">
             <Project
               title="jungaretti.com"
               description="My personal website built with Next.js and Tailwind CSS. Thanks for checking it out!"
@@ -88,7 +88,7 @@ export default function Home() {
                 },
               ]}
             />
-          </Showcase>
+          </Gallery>
           {/* <Showcase title="Recent Thoughts"></Showcase> */}
           {/* <Showcase title="Good Memories"></Showcase> */}
         </div>
