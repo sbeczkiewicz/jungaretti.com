@@ -1,59 +1,38 @@
-import Link from "next/link";
+import Link from "../components/Link";
+import FooterGroup from "./FooterGroup";
 
 export default function Footer() {
   return (
     <footer className="max-w-screen-md px-4 my-4 mx-auto space-y-4">
       <hr />
-      <div className="mt-4 space-y-2 sm:space-y-0 sm:flex sm:space-x-4">
-        <div>
-          <h5 className="font-bold">Here</h5>
-          <span className="underline">
-            <Link href="/">Home</Link>
-          </span>
-        </div>
-        <div>
-          <h5 className="font-bold">There</h5>
-          <a
+      <div className="space-y-4 md:flex md:space-y-0 md:space-x-8">
+        <FooterGroup title="Here">
+          <Link title="Home" href="/" />
+        </FooterGroup>
+        <FooterGroup title="There">
+          <Link
+            title="GitHub"
             href="https://github.com/jungaretti/"
-            target="_blank"
-            className="underline"
-          >
-            GitHub
-          </a>
-        </div>
-        <div>
+            isExternal
+          />
+        </FooterGroup>
+        <FooterGroup>
           <p>
             Crafted with{" "}
-            <a href="https://nextjs.org/" target="_blank" className="underline">
-              Next.js
-            </a>{" "}
-            and{" "}
-            <a
+            <Link title="Next.js" href="https://nextjs.org/" isExternal /> and{" "}
+            <Link
+              title="Tailwind CSS"
               href="https://tailwindcss.com/"
-              target="_blank"
-              className="underline"
-            >
-              Tailwind CSS
-            </a>{" "}
+              isExternal
+            />{" "}
             in Madison, Wisconsin. Inspired by{" "}
-            <a href="https://leerob.io/" target="_blank" className="underline">
-              Lee Robinson
-            </a>
-            ,{" "}
-            <a href="https://griko.id/" target="_blank" className="underline">
-              Griko Nibras
-            </a>
-            , and{" "}
-            <a
-              href="https://lowmess.com/"
-              target="_blank"
-              className="underline"
-            >
-              Alec Lomas
-            </a>
-            . MIT License © 2021 James Ungaretti.
+            <Link title="Lee Robinson" href="https://leerob.io/" isExternal />,{" "}
+            <Link title="Griko Nibras" href="https://griko.id/" isExternal />,
+            and{" "}
+            <Link title="Alec Lomas" href="https://lowmess.com/" isExternal />.
           </p>
-        </div>
+          <p>MIT License © 2021 James Ungaretti.</p>
+        </FooterGroup>
       </div>
     </footer>
   );
