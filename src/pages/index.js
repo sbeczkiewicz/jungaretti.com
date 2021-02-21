@@ -26,8 +26,8 @@ export default function Home() {
       <Header />
       <main>
         <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
-          <div className="container py-11 space-y-2">
-            <h1 className="mb-0 sm:mb-2 text-3xl sm:text-5xl font-bold">
+          <div className="container py-12 space-y-2">
+            <h1 className="font-bold text-3xl mb-0 md:text-5xl md:mb-2">
               Ciao, I'm JP!
             </h1>
             <p className="font-medium">
@@ -37,7 +37,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="container py-4">
+        <div className="container py-6">
           <Gallery title="Neat Projects">
             <Project
               title="jungaretti.com"
