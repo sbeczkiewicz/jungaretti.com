@@ -1,8 +1,4 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
-import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -23,77 +19,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Header />
-      <main>
-        <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
-          <div className="container py-12 space-y-2">
-            <h1 className="font-bold text-3xl mb-0 md:text-5xl md:mb-2">
-              Ciao, I'm JP!
-            </h1>
-            <p className="font-medium">
-              I'm a developer studying computer science and Italian. I love to
-              swim, play board games, mess around with Linux, and visit national
-              parks. Welcome to my corner of the Internet!
-            </p>
-          </div>
-        </div>
-        <div className="container py-6">
-          <Gallery title="Neat Projects">
-            <Project
-              title="jungaretti.com"
-              description="My personal website built with Next.js and Tailwind CSS. Thanks for checking it out!"
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/jungaretti.com",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="Milk Chugger"
-              description="An innovative solution to a problem faced by 5.6 million Wisconsinites: logging milk consumption. Steve Beczkiewicz and I built Milk Chugger during a weekend hackathon."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/milk-chugger/",
-                  isExternal: true,
-                },
-                {
-                  title: "Steve's Website",
-                  href: "https://sbeczkiewicz.github.io/",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="LeetCode"
-              description="Efficient solutions to LeetCode challenges written in several programming languages."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/leetcode",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="Digist"
-              description="Transforms your GitHub Gists into highly-functional code snippets for the web."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/digist",
-                  isExternal: true,
-                },
-              ]}
-            />
-          </Gallery>
-          {/* <Showcase title="Recent Thoughts"></Showcase> */}
-          {/* <Showcase title="Good Memories"></Showcase> */}
-        </div>
-      </main>
-      <Footer />
+      <h1>Hello World</h1>
     </div>
   );
 }
