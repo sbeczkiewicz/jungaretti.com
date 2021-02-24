@@ -22,12 +22,12 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section>
-          <h1>Ciao, I'm JP.</h1>
+        <section className="container">
+          <h1 className="text-2xl font-bold">Ciao, I'm JP.</h1>
           <p>
-            Welcome to my corner of the Internet! I'm a developer studying
-            computer science and Italian. I love to swim, play board games, mess
-            around with computers, and spend time outside.
+            I'm a developer studying computer science and Italian. I love to
+            swim, play board games, mess around with Linux, and visit national
+            parks. Welcome to my corner of the Internet!
           </p>
         </section>
       </main>

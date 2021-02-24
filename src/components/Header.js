@@ -1,10 +1,14 @@
 export default function Header() {
   return (
     <header>
-      <div className="flex">
-        <span className="flex-auto">JP Ungaretti</span>
-        <span>Home</span>
-        <span>Projects</span>
+      <div className="container flex my-8">
+        <div className="flex-auto">
+          <span className="flex-auto font-bold">JP Ungaretti</span>
+        </div>
+        <div className="flex flex-row space-x-4">
+          <span>Home</span>
+          <span>Projects</span>
+        </div>
       </div>
     </header>
   );
