@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -19,7 +20,17 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <h1>Hello World</h1>
+      <Header />
+      <main>
+        <section>
+          <h1>Ciao, I'm JP.</h1>
+          <p>
+            Welcome to my corner of the Internet! I'm a developer studying
+            computer science and Italian. I love to swim, play board games, mess
+            around with computers, and spend time outside.
+          </p>
+        </section>
+      </main>
     </div>
   );
 }
