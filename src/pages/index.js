@@ -23,11 +23,11 @@ export default function Home() {
       <Header />
       <main>
         <section className="container">
-          <h1 className="text-2xl font-bold">Ciao, I'm JP.</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">Ciao, I'm JP.</h1>
           <p>
             I'm a developer studying computer science and Italian. I love to
             swim, play board games, mess around with Linux, and visit national
-            parks. Welcome to my corner of the Internet!
+            parks. Welcome to my corner of the Internet.
           </p>
         </section>
       </main>

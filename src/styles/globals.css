@@ -1,5 +1,5 @@
 .container {
-  @apply max-w-screen-lg;
+  max-width: 720px;
   @apply mx-auto;
   @apply px-4;
 }
