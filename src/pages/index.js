@@ -29,8 +29,8 @@ export default function Home() {
             </h1>
             <p className="font-medium">
               I'm a developer studying computer science and Italian. I love to
-              swim, play board games, mess around with Linux, and visit national
-              parks. Welcome to my corner of the Internet.
+              swim, play board games, mess around with computers, and visit
+              national parks. Welcome to my corner of the Internet.
             </p>
           </div>
         </section>
