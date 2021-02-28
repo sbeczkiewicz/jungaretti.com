@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <header className="my-8">
-      <div className="container flex">
+    <header>
+      <div className="container py-8 flex">
         <div className="flex-auto">
           <span className="flex-auto font-bold">JP Ungaretti</span>
         </div>

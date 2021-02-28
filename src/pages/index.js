@@ -22,13 +22,17 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section className="container">
-          <h1 className="text-3xl sm:text-4xl font-bold">Ciao, I'm JP.</h1>
-          <p>
-            I'm a developer studying computer science and Italian. I love to
-            swim, play board games, mess around with Linux, and visit national
-            parks. Welcome to my corner of the Internet.
-          </p>
+        <section className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
+          <div className="container py-8 sm:py-12">
+            <h1 className="text-3xl sm:text-5xl sm:mb-2 font-bold">
+              Ciao, I'm JP.
+            </h1>
+            <p className="font-medium">
+              I'm a developer studying computer science and Italian. I love to
+              swim, play board games, mess around with Linux, and visit national
+              parks. Welcome to my corner of the Internet.
+            </p>
+          </div>
         </section>
       </main>
     </div>
