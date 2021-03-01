@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "theme-dark": "#2F3137",
-        "theme-text": "#FDFDFD",
+        "theme-jet": "#2F3137",
+        "theme-viridian": "#379392",
+        "theme-steel": "#4680C3",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
