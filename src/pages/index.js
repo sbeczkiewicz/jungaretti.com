@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import DetailHeader from "../components/DetailHeader";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -35,6 +36,20 @@ export default function Home() {
         </section>
         <section className="container my-6">
           <DetailHeader title="Notable Works" subtitle="Projects" />
+          <div className="mt-4 space-y-4">
+            <Project
+              title="jungaretti.com"
+              description="My corner of the Internet. Built with Next.js and Tailwind CSS. Thanks for checking it out!"
+            />
+            <Project
+              title="Milk Chugger"
+              description="5.6 million Wisconsinites use this product each day. Built with Steve Beczkiewicz during a weekend hackathon."
+            />
+            <Project
+              title="Digist"
+              description="Elegant and functional code snippets for the web. Built during Microsoft's annual Hackathon."
+            />
+          </div>
         </section>
       </main>
     </div>
