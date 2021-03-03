@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import DetailHeader from "../components/DetailHeader";
-import Project from "../components/Project";
 import Footer from "../components/Footer";
+import Heading from "../components/Heading";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </section>
         <section className="container my-6">
-          <DetailHeader title="Notable Works" subtitle="Projects" />
+          <Heading title="Notable Works" subtitle="Projects" />
           <div className="mt-4 space-y-4">
             <Project
               title="jungaretti.com"

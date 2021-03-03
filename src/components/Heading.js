@@ -1,4 +1,4 @@
-export default function DetailHeader({ title, subtitle }) {
+export default function Heading({ title, subtitle }) {
   return (
     <div>
       <h6 className="text-sm font-bold opacity-80 uppercase">{subtitle}</h6>
