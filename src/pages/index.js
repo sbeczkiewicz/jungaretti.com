@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import Project from "../components/Project";
+import Footer from "../sections/Footer";
+import Header from "../sections/Header";
 
 export default function Home() {
   return (
