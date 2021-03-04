@@ -32,8 +32,8 @@ export default function Home({ projects }) {
         <section className="container my-6">
           <Heading title="Notable Works" subtitle="Projects" />
           <div className="mt-4 space-y-4">
-            {projects.map(({ title, description }, key) => (
-              <Project title={title} description={description} key={key} />
+            {projects.map((project, key) => (
+              <Project {...project} key={key} />
             ))}
           </div>
         </section>
@@ -53,6 +53,10 @@ export async function getStaticProps(context) {
         {
           title: "Repository",
           href: "https://github.com/jungaretti/jungaretti.com",
+        },
+        {
+          title: "Website",
+          href: "https://www.jungaretti.com",
         },
       ],
     },
@@ -75,6 +79,11 @@ export async function getStaticProps(context) {
         {
           title: "Repository",
           href: "https://github.com/jungaretti/digist",
+        },
+        {
+          title: "Sample",
+          href:
+            "https://digist.azurewebsites.net/gist/26b7cb6545cb1cb56d9dc8ac273ee4fc?file=Thing.ts&slice=4:6&theme=dark",
         },
       ],
     },

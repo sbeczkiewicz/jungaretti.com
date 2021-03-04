@@ -3,3 +3,8 @@
   @apply mx-auto;
   @apply px-4;
 }
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: #379392; /* theme-viridian */
+}
