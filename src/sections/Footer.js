@@ -1,3 +1,5 @@
+import Link from "../components/Link";
+
 export default function Footer() {
   return (
     <footer>
@@ -6,17 +8,32 @@ export default function Footer() {
         <div className="my-6 flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6">
           <div>
             <h5 className="font-bold">Here</h5>
-            <span>Home</span>
+            <Link title="Home" href="/" />
           </div>
           <div>
             <h5 className="font-bold">There</h5>
-            <span>GitHub</span>
+            <Link
+              title="GitHub"
+              href="https://github.com/jungaretti/"
+              isExternal
+            />
           </div>
           <div>
             <p>
-              Crafted with Next.js and Tailwind CSS in Madison, Wisconsin.
-              Inspired by Griko Nibras, Alec Lomas, and Lee Robinson. MIT
-              License © 2021 James Ungaretti.
+              Crafted with{" "}
+              <Link title="Next.js" href="https://nextjs.org/" isExternal /> and{" "}
+              <Link
+                title="Tailwind CSS"
+                href="https://tailwindcss.com/"
+                isExternal
+              />{" "}
+              in Madison, Wisconsin. Inspired by{" "}
+              <Link title="Alec Lomas" href="https://lowmess.com/" isExternal />
+              ,{" "}
+              <Link title="Griko Nibras" href="https://griko.id/" isExternal />,
+              and{" "}
+              <Link title="Lee Robinson" href="https://leerob.io/" isExternal />
+              . MIT License © 2021 James Ungaretti.
             </p>
           </div>
         </div>
