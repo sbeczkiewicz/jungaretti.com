@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Heading from "../components/Heading";
-import Link from "../components/Link";
 import Project from "../components/Project";
 import Footer from "../sections/Footer";
 import Header from "../sections/Header";
@@ -19,11 +18,7 @@ export default function Home({ projects }) {
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="stylesheet" href="/inter/inter.css" />
       </Head>
       <Header />
       <main>
