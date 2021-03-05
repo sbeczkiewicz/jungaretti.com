@@ -1,13 +1,16 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header>
-      <div className="container py-8 flex">
+      <div className="container my-8 flex">
         <div className="flex-auto">
-          <span className="flex-auto font-bold">JP Ungaretti</span>
+          <span className="flex-auto font-bold">
+            <Link href="/">JP Ungaretti</Link>
+          </span>
         </div>
         <div className="flex flex-row space-x-4">
-          <span>Home</span>
-          <span>Projects</span>
+          <Link href="/">Home</Link>
         </div>
       </div>
     </header>
