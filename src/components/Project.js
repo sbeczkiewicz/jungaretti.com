@@ -1,4 +1,4 @@
-import Link from "./Link";
+import LinkWrapper from "./LinkWrapper";
 
 export default function Project({ title, description, links }) {
   return (
@@ -8,7 +8,7 @@ export default function Project({ title, description, links }) {
       <ul className="flex flex-row space-x-2">
         {links.map((link, key) => (
           <li key={key}>
-            <Link {...link} isExternal />
+            <LinkWrapper {...link} isExternal />
           </li>
         ))}
       </ul>
