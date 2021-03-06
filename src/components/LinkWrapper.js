@@ -7,13 +7,15 @@ export default function LinkWrapper({
   noUnderline,
 }) {
   return (
-    <span className={`link cursor-pointer ${noUnderline || "underline"}`}>
+    <span className={"cursor-pointer"}>
       {isExternal ? (
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" className={noUnderline || "underline"}>
           {children}
         </a>
       ) : (
-        <Link href={href}>{children}</Link>
+        <span className={noUnderline || "underline"}>
+          <Link href={href}>{children}</Link>
+        </span>
       )}
     </span>
   );
