@@ -6,9 +6,11 @@ export default function Project({ title, description, links }) {
       <h3 className="text-lg font-bold">{title}</h3>
       <p>{description}</p>
       <ul className="flex flex-row space-x-2">
-        {links.map((link, key) => (
+        {links.map(({ title, ...link }, key) => (
           <li key={key}>
-            <LinkWrapper {...link} isExternal />
+            <LinkWrapper {...link} isExternal>
+              <span>{title}</span>
+            </LinkWrapper>
           </li>
         ))}
       </ul>
