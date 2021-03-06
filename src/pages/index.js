@@ -65,6 +65,10 @@ export async function getStaticProps(context) {
           title: "Repository",
           href: "https://github.com/jungaretti/milk-chugger",
         },
+        {
+          title: "Steve's Website",
+          href: "https://sbeczkiewicz.github.io/",
+        },
       ],
     },
     {
@@ -75,11 +79,6 @@ export async function getStaticProps(context) {
         {
           title: "Repository",
           href: "https://github.com/jungaretti/digist",
-        },
-        {
-          title: "Sample",
-          href:
-            "https://digist.azurewebsites.net/gist/26b7cb6545cb1cb56d9dc8ac273ee4fc?file=Thing.ts&slice=4:6&theme=dark",
         },
       ],
     },
