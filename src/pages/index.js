@@ -1,10 +1,11 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
+import Heading from "../components/Heading";
 import Project from "../components/Project";
+import Footer from "../sections/Footer";
+import Header from "../sections/Header";
+import Welcome from "../sections/Welcome";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <div>
       <Head>
@@ -17,83 +18,75 @@ export default function Home() {
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="stylesheet" href="/inter/inter.css" />
       </Head>
       <Header />
       <main>
-        <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-600 text-white">
-          <div className="container py-12 space-y-2">
-            <h1 className="font-bold text-3xl mb-0 md:text-5xl md:mb-2">
-              Ciao, I'm JP!
-            </h1>
-            <p className="font-medium">
-              I'm a developer studying computer science and Italian. I love to
-              swim, play board games, mess around with Linux, and visit national
-              parks. Welcome to my corner of the Internet!
-            </p>
+        <section className="bg-gradient-to-r from-theme-viridian to-theme-steel">
+          <Welcome />
+        </section>
+        <section className="container my-6">
+          <Heading title="Notable Works" subtitle="Projects" />
+          <div className="mt-4 space-y-4">
+            {projects.map((project, key) => (
+              <Project {...project} key={key} />
+            ))}
           </div>
-        </div>
-        <div className="container py-6">
-          <Gallery title="Neat Projects">
-            <Project
-              title="jungaretti.com"
-              description="My personal website built with Next.js and Tailwind CSS. Thanks for checking it out!"
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/jungaretti.com",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="Milk Chugger"
-              description="An innovative solution to a problem faced by 5.6 million Wisconsinites: logging milk consumption. Steve Beczkiewicz and I built Milk Chugger during a weekend hackathon."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/milk-chugger/",
-                  isExternal: true,
-                },
-                {
-                  title: "Steve's Website",
-                  href: "https://sbeczkiewicz.github.io/",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="LeetCode"
-              description="Efficient solutions to LeetCode challenges written in several programming languages."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/leetcode",
-                  isExternal: true,
-                },
-              ]}
-            />
-            <Project
-              title="Digist"
-              description="Transforms your GitHub Gists into highly-functional code snippets for the web."
-              links={[
-                {
-                  title: "Repository",
-                  href: "https://github.com/jungaretti/digist",
-                  isExternal: true,
-                },
-              ]}
-            />
-          </Gallery>
-          {/* <Showcase title="Recent Thoughts"></Showcase> */}
-          {/* <Showcase title="Good Memories"></Showcase> */}
-        </div>
+        </section>
       </main>
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const projects = [
+    {
+      title: "jungaretti.com",
+      description:
+        "My corner of the Internet. Built with Next.js and Tailwind CSS. Thanks for checking it out!",
+      links: [
+        {
+          title: "Repository",
+          href: "https://github.com/jungaretti/jungaretti.com",
+        },
+        {
+          title: "Website",
+          href: "https://www.jungaretti.com",
+        },
+      ],
+    },
+    {
+      title: "Milk Chugger",
+      description:
+        "Highly-functional milk tracker with a potential userbase  of 5.6 million Wisconsinites. Built with React, Firebase, and Steve Beczkiewicz during a weekend hackathon.",
+      links: [
+        {
+          title: "Repository",
+          href: "https://github.com/jungaretti/milk-chugger",
+        },
+        {
+          title: "Steve's Website",
+          href: "https://sbeczkiewicz.github.io/",
+        },
+      ],
+    },
+    {
+      title: "Digist",
+      description:
+        "Elegant and functional code snippets for the web. Built with Express, Pug, and Azure during Microsoft's annual Hackathon.",
+      links: [
+        {
+          title: "Repository",
+          href: "https://github.com/jungaretti/digist",
+        },
+      ],
+    },
+  ];
+
+  return {
+    props: {
+      projects,
+    },
+  };
 }

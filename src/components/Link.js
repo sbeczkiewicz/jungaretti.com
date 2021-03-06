@@ -1,9 +1,10 @@
 import LinkSwitch from "./LinkSwitch";
 
-export default function Link({ title, href, isExternal }) {
+export default function Link(link) {
+  // I can't import next/link as anything OTHER than Link
   return (
-    <span className="underline">
-      <LinkSwitch title={title} href={href} isExternal={isExternal} />
+    <span className="link">
+      <LinkSwitch {...link} />
     </span>
   );
 }
