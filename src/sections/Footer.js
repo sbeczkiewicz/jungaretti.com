@@ -6,9 +6,13 @@ function Here() {
   return (
     <div>
       <Heading title="Here" />
-      <span className="text-theme-griko">
-        <Link href="/">Home</Link>
-      </span>
+      <ul>
+        <li>
+          <span className="text-theme-griko">
+            <Link href="/">Home</Link>
+          </span>
+        </li>
+      </ul>
     </div>
   );
 }
@@ -17,11 +21,15 @@ function There() {
   return (
     <div>
       <Heading title="There" />
-      <span className="text-theme-griko">
-        <a href="https://github.com/jungaretti/" target="_blank">
-          GitHub
-        </a>
-      </span>
+      <ul>
+        <li>
+          <span className="text-theme-griko">
+            <a href="https://github.com/jungaretti/" target="_blank">
+              GitHub
+            </a>
+          </span>
+        </li>
+      </ul>
     </div>
   );
 }
