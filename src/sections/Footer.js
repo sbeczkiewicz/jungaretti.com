@@ -6,7 +6,7 @@ function Here() {
   return (
     <div>
       <Heading title="Here" />
-      <span className="text-theme-griko underline">
+      <span className="text-theme-griko">
         <Link href="/">Home</Link>
       </span>
     </div>
@@ -17,7 +17,7 @@ function There() {
   return (
     <div>
       <Heading title="There" />
-      <span className="text-theme-griko underline">
+      <span className="text-theme-griko">
         <a href="https://github.com/jungaretti/" target="_blank">
           GitHub
         </a>
@@ -34,7 +34,7 @@ function Anywhere() {
         <a
           href="https://nextjs.org/"
           target="_blank"
-          className="text-theme-griko underline"
+          className="text-theme-griko"
         >
           Next.js
         </a>{" "}
@@ -42,7 +42,7 @@ function Anywhere() {
         <a
           href="https://tailwindcss.com/"
           target="_blank"
-          className="text-theme-griko underline"
+          className="text-theme-griko"
         >
           Tailwind CSS
         </a>{" "}
@@ -50,7 +50,7 @@ function Anywhere() {
         <a
           href="https://lowmess.com/"
           target="_blank"
-          className="text-theme-griko underline"
+          className="text-theme-griko"
         >
           Alec Lomas
         </a>
@@ -58,7 +58,7 @@ function Anywhere() {
         <a
           href="https://griko.id/"
           target="_blank"
-          className="text-theme-griko underline"
+          className="text-theme-griko"
         >
           Griko Nibras
         </a>
@@ -66,7 +66,7 @@ function Anywhere() {
         <a
           href="https://leerob.io/"
           target="_blank"
-          className="text-theme-griko underline"
+          className="text-theme-griko"
         >
           Lee Robinson
         </a>
