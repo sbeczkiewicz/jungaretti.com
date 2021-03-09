@@ -47,12 +47,8 @@ export async function getStaticProps(context) {
         "My corner of the Internet. Built with Next.js and Tailwind CSS. Thanks for checking it out!",
       links: [
         {
-          title: "GitHub",
+          title: "Repository",
           href: "https://github.com/jungaretti/jungaretti.com",
-        },
-        {
-          title: "Website",
-          href: "https://www.jungaretti.com",
         },
       ],
     },
@@ -62,7 +58,7 @@ export async function getStaticProps(context) {
         "Highly-functional milk tracker with a potential userbase  of 5.6 million Wisconsinites. Built with React, Firebase, and Steve Beczkiewicz during a weekend hackathon.",
       links: [
         {
-          title: "GitHub",
+          title: "Repository",
           href: "https://github.com/jungaretti/milk-chugger",
         },
         {
@@ -77,7 +73,7 @@ export async function getStaticProps(context) {
         "Elegant and functional code snippets for the web. Built with Express, Pug, and Azure during Microsoft's annual Hackathon.",
       links: [
         {
-          title: "GitHub",
+          title: "Repository",
           href: "https://github.com/jungaretti/digist",
         },
       ],
