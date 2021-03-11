@@ -6,7 +6,7 @@ export default function Project({ title, description, links }) {
       <ul className="flex flex-row space-x-2">
         {links.map(({ title, href }, key, array) => (
           <li key={key}>
-            <span className="text-theme-griko">
+            <span className="text-theme-buff">
               <a href={href} target="_blank">
                 {title}
               </a>
