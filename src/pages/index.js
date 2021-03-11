@@ -22,17 +22,17 @@ export default function Home({ projects }) {
       </Head>
       <Header />
       <main>
-        <section className="bg-gradient-to-r from-theme-viridian to-theme-steel">
+        <div className="bg-gradient-to-r from-theme-viridian to-theme-steel">
           <Welcome />
-        </section>
-        <section className="container my-6">
+        </div>
+        <div className="container my-6">
           <Heading title="Notable Works" subtitle="Projects" />
           <div className="mt-4 space-y-4">
             {projects.map((project, key) => (
               <Project {...project} key={key} />
             ))}
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </div>
