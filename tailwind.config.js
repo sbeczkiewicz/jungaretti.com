@@ -9,7 +9,7 @@ module.exports = {
         "theme-jet": "#2F3137",
         "theme-viridian": "#379392",
         "theme-steel": "#4680C3",
-        "theme-buff": "#F4D890",
+        "theme-griko": "#F6E05E",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
