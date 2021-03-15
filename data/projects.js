@@ -11,6 +11,28 @@ export let projects = [
     ],
   },
   {
+    title: "BadgerCoin",
+    description:
+      "Impromptu blockchain demo featuring BadgerCoin, the world's newest cryptocurrency. Built with TypeScript and crypto on a Tuesday night in March, 2021.",
+    links: [
+      {
+        title: "Repository",
+        href: "https://github.com/jungaretti/badgercoin",
+      },
+    ],
+  },
+  {
+    title: "Digist",
+    description:
+      "Elegant and functional code snippets for the web. Built with Express, Pug, and Azure during Microsoft's annual Hackathon.",
+    links: [
+      {
+        title: "Repository",
+        href: "https://github.com/jungaretti/digist",
+      },
+    ],
+  },
+  {
     title: "Milk Chugger",
     description:
       "Highly-functional milk tracker with a potential userbase  of 5.6 million Wisconsinites. Built with React, Firebase, and Steve Beczkiewicz during a weekend hackathon.",
@@ -26,13 +48,13 @@ export let projects = [
     ],
   },
   {
-    title: "Digist",
+    title: "Dotfiles",
     description:
-      "Elegant and functional code snippets for the web. Built with Express, Pug, and Azure during Microsoft's annual Hackathon.",
+      "An assortment of dotfiles paired with a setup guide for my computers.",
     links: [
       {
         title: "Repository",
-        href: "https://github.com/jungaretti/digist",
+        href: "https://github.com/jungaretti/dotfiles",
       },
     ],
   },
