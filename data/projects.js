@@ -35,7 +35,7 @@ export let projects = [
   {
     title: "Milk Chugger",
     description:
-      "Highly-functional milk tracker with a potential userbase  of 5.6 million Wisconsinites. Built with React, Firebase, and Steve Beczkiewicz during a weekend hackathon.",
+      "Highly-functional milk tracker with a potential userbase  of 5.6 million Wisconsinites. Built with React, Firebase, and Steve Beczkiewicz during a four day hackathon.",
     links: [
       {
         title: "Repository",
